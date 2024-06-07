@@ -8,8 +8,7 @@ const MovieSchema = new mongoose.Schema({
     },
     category: {
         type: String,
-        required: true,
-        unique: true
+        required: true
     },  
 });
 

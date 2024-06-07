@@ -11,6 +11,6 @@ connectToDb()
 app.use('/api/categories', categoryRouter)
 app.use('/api/movies', movieRouter)
 
-app.listen(3000, () => {
-    console.log('server running on http://localhost:3000')
+app.listen(3080, () => {
+    console.log('server running on http://localhost:3080')
 })
