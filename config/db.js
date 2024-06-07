@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const connectDB = async () => {
     try {
-        await mongoose.connect('mongodb://localhost:27017/moviesDb', {
+        await mongoose.connect('mongodb+srv://admin:admin@moviesdb.iowtaii.mongodb.net/?retryWrites=true&w=majority&appName=moviesDB', {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         });

@@ -27,8 +27,8 @@ const updateMovieById = async (req, res) => {
 
 const getMoviesByCategory = async (req, res) => {
     try {
-        const movies = await Movie.find({ category: req.params.categoryId });
-        res.status(200).json(movies);
+        const movies = await Movie.find({ category: req.params.categoryTitle });
+        res.status(200).json({success:true, data: movies});
     } catch (err) {
         res.status(400).json({success: false, data: null, error: err.message });
     }
